@@ -1,6 +1,9 @@
 package song.sspring.service;
 
-public class sService implements IsService {
+import song.sspring.annotation.sService;
+
+@sService
+public class songService implements IsongService {
 
 	@Override
 	public String getName(String name) {

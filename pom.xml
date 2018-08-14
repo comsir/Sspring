@@ -30,4 +30,19 @@
     </dependency>
     
   </dependencies>
+    <build>
+    <finalName>transition</finalName>
+    <plugins>
+    	<plugin>
+    		<groupId>org.codehaus.mojo</groupId>
+    		<artifactId>tomcat-maven-plugin</artifactId>
+    		<configuration>
+    			<warFile>target/transition.war</warFile>
+    			<server>tomcat</server>
+    			<url>http://localhost:8080/manager/text</url>
+    			<path>/transition</path>
+  			</configuration>
+    	</plugin>
+    </plugins>
+  </build>
 </project>

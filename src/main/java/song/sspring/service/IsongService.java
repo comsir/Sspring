@@ -1,5 +1,5 @@
 package song.sspring.service;
 
-public interface IsService {
+public interface IsongService {
 	public String getName(String name);
 }
